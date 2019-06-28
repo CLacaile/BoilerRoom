@@ -12,3 +12,19 @@ The RaspPi also hosts an http server in order to configure the system (schedule,
 - Read temperature on ESP8266
 - Set communication between master and slaves
 - Build http server to control master
+
+## Control servo with raspberry pi 
+
+Make sure `pigpiod` deamon is running:
+```
+sudo killall pigpiod
+sudo pigpiod
+```
+In Python:
+```python
+import pigpio
+pi = pigpio.pi()
+pi.set_servo_pulsewidth(18, 1500) # SG90 set to middle position
+pi.set_servo_pulsewidth(18, 1000) # SG90 set to left position
+pi.set_servo_pulsewidth(18, 2000) # SG90 set to right position
+```
