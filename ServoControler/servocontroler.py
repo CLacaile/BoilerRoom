@@ -13,3 +13,5 @@ if __name__ == "__main__":
         # turn the boiler switch to OFF position
         pi.set_servo_pulsewith(18, 2000)
         print(">> Boiler turned off")
+    else:
+        print("ERROR: invalid argument")
