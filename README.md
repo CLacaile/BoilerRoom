@@ -6,6 +6,10 @@ The master receive the temperature data from the slaves and computes whether the
 As of v0, the trigger for the on/off switch is a servomotor that turns the boiler switch.
 The RaspPi also hosts an http server in order to configure the system (schedule, switching temperature, ...) on a web browser.
 
+# v0 scheme
+
+![Boiler Room Diagram](Boiler-Room-diagram.png)
+
 # v0 TODO LIST
 
 - Control servo with raspberry pi according to bool?
