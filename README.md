@@ -8,7 +8,7 @@ The RaspPi also hosts an http server in order to configure the system (schedule,
 
 # v0 scheme
 
-![Boiler Room Diagram](Boiler-Room-diagram.png =240x320)
+![Boiler Room Diagram](Boiler-Room-diagram.png)
 
 # v0 TODO LIST
 
