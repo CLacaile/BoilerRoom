@@ -32,3 +32,12 @@ pi.set_servo_pulsewidth(18, 1500) # SG90 set to middle position
 pi.set_servo_pulsewidth(18, 1000) # SG90 set to left position
 pi.set_servo_pulsewidth(18, 2000) # SG90 set to right position
 ```
+
+## ServoControler
+
+ServoControler is a simple Python script that takes as arg ON or OFF.
+ON will turn the servo all the way to one side (left, 1/1000s PW) using pigpio lib to turn the boiler switch.
+OFF will turn the servo all the way to the other side (right, 1/2000s PW).
+TODO: log file to track ON/OFF status
+
+
