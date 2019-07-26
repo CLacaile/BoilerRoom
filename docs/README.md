@@ -19,12 +19,14 @@ In the future, a database will be implemented as well as an advanced responsive 
 - Set communication between master and slaves
 - Build http server to control master
 
-# Overview
+# Notes
 
 As of v0 BoilerManager is a Django webapp that only controls the GPIO of the RPi.
 In the future, it will monitor sensors data as well as perform the computations for the tempratures.
 
-## Install Python3.7.4
+## Django
+
+### Build Python 3.6.9 from sources
 
 Installation process is detailed [here](https://github.com/instabot-py/instabot.py/wiki/Installing-Python-3.7-on-Raspberry-Pi)
 
@@ -33,14 +35,26 @@ Installation process is detailed [here](https://github.com/instabot-py/instabot.
 sudo apt-get update -y
  sudo apt-get install build-essential tk-dev libncurses5-dev libncursesw5-dev libreadline6-dev libdb5.3-dev libgdbm-dev libsqlite3-dev libssl-dev libbz2-dev libexpat1-dev liblzma-dev zlib1g-dev libffi-dev -y
 ```
-2. Fetch last version of Python (Python 3.7.4 as of writing)
+2. Fetch last version of Python (Python 3.6.9 as of writing)
 ```
-wget https://www.python.org/ftp/python/3.7.4/Python-3.7.4.tar.xz
- tar xf Python-3.7.4.tar.xz
- cd Python-3.7.4
+wget https://www.python.org/ftp/python/3.6.9/Python-3.6.9.tar.xz
+ tar xf Python-3.6.9.tar.xz
+ cd Python-3.6.9
  ./configure
  make
  sudo make altinstall
+```
+
+### Django
+
+1. Install Django:
+```
+pip3.7 install Django
+```
+
+2. Create the project:
+```
+django-admin startproject Boilr<version>
 ```
 
 ## Controling the servo
