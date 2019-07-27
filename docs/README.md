@@ -12,12 +12,12 @@ In the future, a database will be implemented as well as an advanced responsive 
 
 # v0 Roadmap
 
-- Install latest version of Python 3
-- Control servo with raspberry pi according to bool?
-- Install Django
-- Read temperature on ESP8266
-- Set communication between master and slaves
-- Build http server to control master
+- [x] Install latest version of Python 3
+- [x] Control servo with raspberry pi according to bool?
+- [x] Install Django and create app
+- [ ] Read temperature on ESP8266
+- [ ] Set communication between master and slaves
+- [ ] Build Apache production server
 
 # Notes
 
@@ -54,7 +54,12 @@ pip3.7 install Django
 
 2. Create the project:
 ```
-django-admin startproject Boilr<version>
+django-admin startproject Boilr_project_<version>
+```
+
+3. Create an app:
+```
+python manage.py startapp Boilr
 ```
 
 ## Controling the servo
@@ -65,6 +70,7 @@ ServoControler is a simple Python script that takes as arg ON or OFF:
 - OFF will turn the servo all the way to the other side (right, 1/2000s PW).
 
 *TODO*: log file to track ON/OFF status
+
 *EDIT 26/07/2019* : this script will be the `views.py` file in the Django app
 
 ### How? : Control a servo with RPi 
@@ -83,5 +89,5 @@ pi.set_servo_pulsewidth(18, 1000) # SG90 set to left position
 pi.set_servo_pulsewidth(18, 2000) # SG90 set to right position
 pi.stop()
 ```
-
+*Note*: Pin 18 is mandatory to have stable hardware PWM
 
