@@ -61,6 +61,7 @@ django-admin startproject Boilr_project_<version>
 ```
 python manage.py startapp Boilr
 ```
+4. Follow [this tutorial](https://docs.djangoproject.com/en/2.2/intro/tutorial01/) and the next ones
 
 ## Controling the servo
 ### What?
