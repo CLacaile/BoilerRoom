@@ -49,7 +49,7 @@ wget https://www.python.org/ftp/python/3.6.9/Python-3.6.9.tar.xz
 
 1. Install Django:
 ```
-pip3.7 install Django
+pip3.6 install Django
 ```
 
 2. Create the project:
@@ -59,9 +59,15 @@ django-admin startproject Boilr_project_<version>
 
 3. Create an app:
 ```
-python manage.py startapp Boilr
+python3.6 manage.py startapp Boilr
 ```
 4. Follow [this tutorial](https://docs.djangoproject.com/en/2.2/intro/tutorial01/) and the next ones
+
+5. Run server so it can be accessed from an other device:
+```
+python3.6 manage.py runserver 0:8080
+```
+6. Access the views from any web browser on http://raspberrypi:8080/boilr
 
 ## Controling the servo
 ### What?
