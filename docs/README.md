@@ -15,6 +15,7 @@ In the future, a database will be implemented as well as an advanced responsive 
 - [x] Install latest version of Python 3
 - [x] Control servo with raspberry pi according to bool?
 - [x] Install Django and create app
+  - TODO : test the classes with migration
 - [ ] Read temperature on ESP8266
 - [ ] Set communication between master and slaves
 - [ ] Build Apache production server
