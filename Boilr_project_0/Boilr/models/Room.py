@@ -5,5 +5,9 @@ class Room(models.Model):
     name = models.CharField(max_length=32)
     type = models.CharField(max_length=32)
     surface = models.FloatField()
+    # sensor_set is added autom by django
+
+    def __str__(self):
+        return self.name
 
 
