@@ -4,5 +4,5 @@ class Measure(models.Model):
     id = models.AutoField(primary_key=True)
     value = models.FloatField()
     unit = models.CharField(max_length=16)
-    time = models.DateTimeField(auto_now=False, auto_now_add=True)
+    time = models.DateTimeField(auto_now=False, auto_now_add=False)
     sensor = models.ForeignKey('Sensor', on_delete=models.CASCADE)
