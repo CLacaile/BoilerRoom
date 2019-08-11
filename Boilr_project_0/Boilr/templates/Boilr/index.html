@@ -1,0 +1,10 @@
+{% if room_list %}
+	<ul>
+	{% for room in room_list %}
+		<li><a href="{% url 'Boilr:detail' room.id %}">{{room.name}}</a></li>
+	{% endfor %}
+	</ul>
+{% else %}
+	<p>No room available! </p>
+{% endif %}
+	
