@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['raspberrypi']
 # Application definition
 
 INSTALLED_APPS = [
+    'Boilr.apps.BoilrConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
